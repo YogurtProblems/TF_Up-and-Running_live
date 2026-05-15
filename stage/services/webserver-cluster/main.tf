@@ -3,7 +3,7 @@ provider "aws" {
 
 }
 module "webserver-cluster" {
-  source = "github.com/YogurtProblems/TF_Up-and-Running_modules//services/webserver-cluster?ref=v0.0.1"
+  source = "github.com/YogurtProblems/TF_Up-and-Running_modules//services/webserver-cluster?ref=v0.0.2"
 
   cluster_name           = "webservers-stage"
   db_remote_state_bucket = "csousa-up-and-running"
